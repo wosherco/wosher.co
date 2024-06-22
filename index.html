@@ -39,10 +39,25 @@
         color: white;
         font-size: 50px;
         font-weight: bold;
-        height: 100vh;
+        height: 50dvh;
         display: flex;
         align-items: center;
         justify-content: center;
+        
+        text-decoration: none;
+        gap: 24px;
+        background-color: black;
+        transition: all .25s;
+      }
+
+      #coming-soon:hover {
+        gap: 64px;
+        background-color: #2e2e2f;
+      }
+
+
+      .item {
+        margin: 10px;
       }
     </style>
     <script type="application/ld+json">
@@ -59,6 +74,19 @@
     </script>
   </head>
   <body>
-    <div id="coming-soon" class="montserrat">Coming soon...</div>
+    <a
+      id="coming-soon"
+      class="montserrat"
+      href="https://shoplist.wosher.co"
+      target="_blank"
+      ><p>Shoplist</p><p>→</p></a
+    >
+    <a
+      id="coming-soon"
+      class="montserrat"
+      href="https://socketless.ws"
+      target="_blank"
+      ><p>Socketless</p><p>→</p></a
+    >
   </body>
 </html>
