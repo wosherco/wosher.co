@@ -35,7 +35,7 @@
         font-style: normal;
       }
 
-      #coming-soon {
+      .link-button {
         color: white;
         font-size: 50px;
         font-weight: bold;
@@ -43,21 +43,36 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        
+
         text-decoration: none;
         gap: 24px;
         background-color: black;
-        transition: all .25s;
+        transition: all 0.25s;
       }
 
-      #coming-soon:hover {
+      .link-button:hover {
         gap: 64px;
         background-color: #2e2e2f;
       }
 
-
       .item {
         margin: 10px;
+      }
+
+      header {
+        position: fixed;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        color: white;
+        justify-content: center;
+        gap: 8px;
+        align-items: center;
+        cursor: pointer;
+      }
+
+      header img {
+        filter: invert(1);
       }
     </style>
     <script type="application/ld+json">
@@ -73,20 +88,28 @@
       }
     </script>
   </head>
-  <body>
-    <a
-      id="coming-soon"
-      class="montserrat"
-      href="https://shoplist.wosher.co"
-      target="_blank"
-      ><p>Shoplist</p><p>→</p></a
-    >
-    <a
-      id="coming-soon"
-      class="montserrat"
-      href="https://socketless.ws"
-      target="_blank"
-      ><p>Socketless</p><p>→</p></a
-    >
+  <body class="montserrat">
+    <header>
+      <img src="/logo-transparent.webp" width="30" height="30" />
+      <p>Wosher</p>
+    </header>
+    <main>
+      <a
+        id="shoplist"
+        class="link-button"
+        href="https://shoplist.wosher.co"
+        target="_blank"
+        ><p>Shoplist</p>
+        <p>→</p></a
+      >
+      <a
+        id="socketless"
+        class="link-button"
+        href="https://socketless.ws"
+        target="_blank"
+        ><p>Socketless</p>
+        <p>→</p></a
+      >
+    </main>
   </body>
 </html>
